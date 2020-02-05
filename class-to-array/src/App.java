@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class App {
-
     public static void main(String[] args) {
 
         Scanner name = new Scanner(System.in);
@@ -17,16 +16,14 @@ public class App {
         Scanner age = new Scanner(System.in);
         System.out.println("What are your age: ");
         String userAge = age.nextLine();
-        int convertAge = Integer.parseInt(userAge);
+        Integer convertAge = Integer.parseInt(userAge);
 
-        Person CreateNewPerson = new Person(userNameVal, userLastnameVal, convertAge);
-        String convertedToString = CreateNewPerson.toString();
+        Person personObj = new Person(userNameVal, userLastnameVal, convertAge);
+        String objToString = personObj.toString();
 
-        ArrayList<String> people = new ArrayList<String>();
-        people.add(convertedToString);
+        ArrayList<String> people = new ArrayList<>();
 
+        people.add(objToString);
         System.out.println(people);
-
     }
-
 }
