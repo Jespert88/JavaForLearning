@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class App {
@@ -19,11 +18,9 @@ public class App {
         Integer convertAge = Integer.parseInt(userAge);
 
         Person personObj = new Person(userNameVal, userLastnameVal, convertAge);
-        String objToString = personObj.toString();
-
-        ArrayList<String> people = new ArrayList<>();
-
-        people.add(objToString);
+        ArrayList<Person> people = new ArrayList<>();
+        people.add(personObj);
         System.out.println(people);
+
     }
 }

@@ -34,4 +34,9 @@ public class Person {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "\n" + "{" + name + " , " + Lastname + " , " + age  + '}' + "\n";
+    }
 }
